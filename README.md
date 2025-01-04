@@ -1,4 +1,3 @@
-%%%markdown
 # How I See You Generator
 
 A responsive web app that lets users create a **3x3 grid** for the popular "How I See You" challenge. Users can upload and crop images for each square, then download the final grid image.
@@ -24,28 +23,28 @@ The app is hosted on GitHub Pages:
 To set up the project locally, follow these steps:
 
 ### 1. Clone the Repository
-%%%
+```
 git clone git@github.com:dotMavriQ/howicugen.git
 cd howicugen
-%%%
+```
 
 ### 2. Install Dependencies
-%%%
+```
 npm install
-%%%
+```
 
 ### 3. Run the App Locally
-%%%
+```
 npm start
-%%%
+```
 
 The app will open in your browser at `http://localhost:3000`.
 
 ### 4. Deploy to GitHub Pages
 To deploy your changes:
-%%%
+```
 npm run deploy
-%%%
+```
 
 This will build the app and push it to the `gh-pages` branch.
 
@@ -55,7 +54,7 @@ This will build the app and push it to the `gh-pages` branch.
 
 The main files and folders are organized as follows:
 
-%%%
+```
 howicugen/
 ├── public/                 # Static files (logo.svg, favicon, etc.)
 ├── src/                    # React source code
@@ -65,7 +64,7 @@ howicugen/
 │   ├── index.css           # Global styles
 ├── package.json            # Dependencies and scripts
 └── README.md               # Project documentation (this file)
-%%%
+```
 
 ---
 
