@@ -1,3 +1,4 @@
+%%%markdown
 # How I See You Generator
 
 A responsive web app that lets users create a **3x3 grid** for the popular "How I See You" challenge. Users can upload and crop images for each square, then download the final grid image.
