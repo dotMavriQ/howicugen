@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# How I See You Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web app that lets users create a **3x3 grid** for the popular "How I See You" challenge. Users can upload and crop images for each square, then download the final grid image.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Responsive 3x3 Grid**: Perfectly square grid boxes that adjust to different screen sizes.
+- **Image Upload with Cropping**: Users can upload and crop images with a locked square (1x1) ratio.
+- **Double-Click Cropping**: Finalize and save cropped images by double-clicking the crop area.
+- **Downloadable Final Image**: The app generates and allows downloading the completed grid as a single image.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app is hosted on GitHub Pages:  
+[https://dotMavriQ.github.io/howicugen](https://dotMavriQ.github.io/howicugen)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation & Usage
 
-### `npm run build`
+To set up the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
+%%%
+git clone git@github.com:dotMavriQ/howicugen.git
+cd howicugen
+%%%
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install Dependencies
+%%%
+npm install
+%%%
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Run the App Locally
+%%%
+npm start
+%%%
 
-### `npm run eject`
+The app will open in your browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Deploy to GitHub Pages
+To deploy your changes:
+%%%
+npm run deploy
+%%%
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will build the app and push it to the `gh-pages` branch.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+The main files and folders are organized as follows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+%%%
+howicugen/
+├── public/                 # Static files (logo.svg, favicon, etc.)
+├── src/                    # React source code
+│   ├── components/         # Reusable components (Grid, UploadModal, etc.)
+│   ├── App.js              # Main app component
+│   ├── index.js            # Entry point for React
+│   ├── index.css           # Global styles
+├── package.json            # Dependencies and scripts
+└── README.md               # Project documentation (this file)
+%%%
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React**: Frontend framework for building the app.
+- **react-easy-crop**: Provides the cropping functionality.
+- **html2canvas**: Used for generating a downloadable image of the grid.
+- **GitHub Pages**: For hosting the app.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Use
 
-### Making a Progressive Web App
+1. **Upload Images**: Click on a grid square to upload an image.  
+2. **Crop Images**: Resize or reposition the image in the cropping modal.  
+3. **Save the Crop**: Double-click inside the crop area to save the image.  
+4. **Download Grid**: After all 9 images are uploaded, click the "Download Your Challenge" button to save the final grid image.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source under the [MIT License](https://opensource.org/licenses/MIT).
