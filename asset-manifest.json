@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/howicugen/static/css/main.980dc19b.css",
+    "main.js": "/howicugen/static/js/main.f2b0c13e.js",
+    "index.html": "/howicugen/index.html",
+    "main.980dc19b.css.map": "/howicugen/static/css/main.980dc19b.css.map",
+    "main.f2b0c13e.js.map": "/howicugen/static/js/main.f2b0c13e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.980dc19b.css",
+    "static/js/main.f2b0c13e.js"
+  ]
+}
